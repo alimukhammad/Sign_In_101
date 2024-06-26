@@ -6,11 +6,11 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0"> 
 	<title>Button Loading Animation</title> 
-	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="styles.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head> 
 
 <body> 
-	<div class="form-container"> 
+	<div class="form-container" class="loader" id="loader"> 
 		<h1>GeeksforGeeks</h1> 
 		<form id="my-form"> 
 			<label for="username">Username:</label> 
@@ -24,8 +24,7 @@
 			<br><br> 
 
 			<div class="btn-container"> 
-				<button id="loadButton" class="btn">Submit<div class="loader" id="loader"> </div> 
-				</button> 
+				<button type="submit" id="loadButton" class="btn" onclick="spinner()">Submit</button> 
 			</div> 
 		</form> 
 	</div> 
